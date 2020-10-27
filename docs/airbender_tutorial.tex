@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[croatian]{babel}
+\usepackage{hyperref}
 
 % tables
 \usepackage{booktabs}
@@ -88,7 +89,7 @@ programiranja te se oni ovdje neće u detalje objašnjavati. Naglasak će se
 staviti na koncepte koji se upotrebljavaju u izradi igre, dakle oni vezani za
 Unreal Engine, razvoj igara itd.
 
-\marginpar{\color{blue}{Dodatna objašnjenja mogu se vidjeti izdvojena sa strane
+\marginpar{\color{teal}{Dodatna objašnjenja mogu se vidjeti izdvojena sa strane
 kako bi se dodatno povezalo objašnjeno s drugim konceptima.}}
 Glavni tekst sadržavat će objašnjenje postupaka koji se koriste u izradi igre.
 Moguće je da se koraci malo promijene u određenim verzijama softvera koji se
@@ -101,8 +102,97 @@ o kojem se pojmu točno radi.
 
 \pagebreak
 
+\section{Uvod u industriju, stvaranje igara te okruženje}
 
-\section{Instalacija, pokretanje i snalaženje u okruženju }
+\begin{quote}
+	\small
+	Programiranje igara se po mnogočemu razlikuje od programiranja
+	poslovnih aplikacija. Pristup i razmišljanje su drugačiji. Dok za
+	poslovne aplikacije je važno usredotočiti se na podatke, u igrama je
+	važno i misliti na tzv. \textit{delivery}, odnosno kako će korisnik
+	doživjeti aplikaciju. Grafiku, fiziku, objekte i druga zajednička
+	obilježja objedinjava \textit{game engine}. Unreal Engine je jedan od
+	najpopularnijih rješenja za razvijanje igara te ćemo se u ovom
+	priručniku koristiti njime.
+	\marginpar{\small\color{teal}{
+		U Unreal Engineu moguće je u potpunosti programirati u \texttt{C++}-u,
+		no zbog kompleksnosti jezika i pristupačnosti
+		\textit{blueprinta} uglavnom ćemo se baviti vizualnim
+		skriptiranjem.
+		}}
+
+	Jedna od posebnost Unreal Enginea je što koristi tzv.
+	\textit{blueprinte}, alat kojim se odnosi između objekata programiraju
+	ne kodom, nego povlaćenjem odnosa između objekata koji su
+	reprezentirani vizualno što olakšava predočavanje te dodatnu razinu
+	apstrakcije od programskog jezika \texttt{C++}.
+
+	Prije nego što će biti objašnjeni detalji o Unreal Engineu objasnit će
+	se i osnove dizajna video igara (en. \textit{game design}), kako teče
+	proces izrade igara te na što se sve treba pripaziti kod izrade igara.
+\end{quote}
+
+Kao dodatna motivacija za stvaranje igara je činjenica da se ta industrija u
+zadnjih osam godina tržišna vrijednost igara udvostručila, a predviđa se da će
+se u iduće tri godine ($2020.-2023.$) vrijednost utrostručiti. Broj aktivnih
+igrača u svijetu raste velikom brzinom te se u tim podatcima porepoznaje
+perspektiva te industrije. Iz tog je razloga dobro poznavanje ovog sektora, ako
+ne zbog želje za radom u njoj, barem zbog opće kulture.
+
+\subsection{Dizajn video igara}
+
+Dizajn video igara kao proces teško je definirati. Dizajn obuhvaća sve ono što
+se događa za vrijeme stvaranja igre, dakle počinje idejom i temom, nastavlja
+razvitkom i na kraju stvaranje verzije igre koja se izdaje i distribuira
+igračima.
+
+\paragraph{Stvaranje ideje}
+
+Ideja se razvija na razne načine -- može doći kroz razgovor s bliskim osobama,
+može se razviti kroz \textit{brainstorming}, može doći kroz kroz bljesak
+inspiracije ili na neke druge načine. Ono što je obično veći problem je doći do
+jednistvenog i kvalitetnog sadržaja jer je do dana današnjeg stvoren ogroman
+broj igara.
+
+Ideje se mogu i razvijati i razrađivati temeljeno na skupljenim idejama
+
+
+\subsection{Unreal Engine}
+
+Kako bi se instalirao Unreal Engine, potrebno je otići na mrežnu stranicu
+stranicu \url{unrealengine.com}. U gornjem desnom kutu su opcije \texttt{Sign
+in} te \texttt{Download}. Prijava je potrebna za pokretanje Unreal Enginea tako
+da se korisnik mora registrirati prije ili kasnije.
+
+\marginpar{\color{teal}{\small Instalacija za Linux ponešto je složenija te je potrebno
+kompajlirati cijeli projekt. To uzima poprilično vremena i resursa, a sadrži i
+nešto više koraka koji se ovdje neće opisati jer se orijentiramo na Windows
+operacijske sustave}}
+
+Kod odabira licence potrebno je pripaziti koja se odabire. \textit{Publishing
+license} ona je koja se odabire ukoliko se proizvod namjerava prodati, a
+\textit{Creators license} ukoliko se namjerava raditi nemonetiziran rad.
+Studenti su navedeni u obje kategorije jer se \textit{engine} ne mora plaćati
+ako se koristi za projekt koji još ne stvara profit.
+
+Dalje je potrebno registrirati se te slijediti uputstva kod instalacije. Unreal
+Engine radi na operacijskim sustavima Linux te Windows.
+
+\subsection{Kreiranje projekta}
+
+\subsection{Zaključak i otvorena pitanja}
+
+Ovo je bio uvod i treba nas pripremiti za sve ono što dolazi u idućoj lekciji,
+a to je postavljanje prvih objekata u svijet.
+
+Ono čime se ovdje može dodatno obogatiti projekt su:
+\begin{itemize}
+	\item otvori prostor za dodatna poboljšanja prvi primjer
+	\item prijedlog drugog poboljšanja
+	\item za učinak koji želimo treći primjer
+\end{itemize}
+
+
 
 \pagebreak
 \section{Kreiranje i kretanje (teleportacija) glavnog lika}
